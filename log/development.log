@@ -802,3 +802,21 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 14ms (Views: 4.7ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/posts/new" for 173.77.183.241 at 2021-03-23 20:49:35 +0000
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (1.3ms)
+  Rendered posts/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 363ms (Views: 355.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/posts/1/edit" for 173.77.183.241 at 2021-03-23 20:49:41 +0000
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (0.6ms)
+  Rendered posts/edit.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 14ms (Views: 11.2ms | ActiveRecord: 0.3ms)
+
+
